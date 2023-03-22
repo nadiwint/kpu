@@ -1,0 +1,505 @@
+@charset "UTF-8";
+
+/* ========================================
+    CSSをリセットする
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+/* ========================================
+    オリジナルレイアウト用CSS
+=========================================*/
+
+/* ========================================
+    ヘッダ用CSS
+=========================================*/
+header {
+  height: auto;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  border-bottom: 2px solid #DDD;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  background-color: #ED2805;
+  text-align: center;
+  
+  padding: 10px 0 10px 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+  color: white;
+  border-left: 1px solid white;
+  width: 250px;
+  padding: 0 ;
+  display: inline-block;
+  height: auto;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  font-family: 'RocknRoll One', sans-serif;
+  
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ED2805;
+  background-color: white;
+  transition: 0.3s;
+}
+
+header nav ul li:last-child {
+  border-right: 1px solid white;
+}
+.clear {
+  clear: both;
+}
+h1 {
+  text-align: center;
+  height: 100%;
+}
+/* ========================================
+    メインコンテンツ用CSS
+=========================================*/
+/* ========================================
+    学部紹介
+=========================================*/
+
+div#main h2 {
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+div#main p {
+  text-align: center;
+  font-size: 38px;
+}
+
+
+div#main div#wrapper {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+div#main div.faculty img {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10%;
+  float: left;
+  transform: translate(0, 0);
+  transition: 0.5s;
+}
+
+div#main div.faculty img:hover {
+  transition: 0.5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  transform: translate(-2px, -2px);
+  cursor: pointer;
+}
+
+/* ========================================
+    情報学部の学部紹介
+=========================================*/
+div#ict {
+  background-color: #e9f3ff;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+div#ict p {
+  font-size: 25px;
+  color: white;
+  background-color: #004098;
+}
+
+div#ict p span {
+  font-style: italic;
+}
+
+div#ict dl {
+  text-align:center;
+}
+
+div#ict dl dt {
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 3px  solid #004098;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+div#ict dl dd {
+  color: black;
+  font-size: 20px;
+}
+
+h4 {
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #004098;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  width: 1060px;
+  padding: 30px 0;
+}
+
+p#design_the_future {
+  width: 1060px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+div#cource {
+  width: 1060px;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+div#cource div {
+  width: 1060px;
+  height: auto;
+  background-color: #fff;
+  border: 1px dotted gray;
+  margin-bottom: 100px;
+}
+
+div#cource div h5 {
+  color: #004098;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+div#cource div p {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+
+/* ========================================
+    事業創造学部の学部紹介
+=========================================*/
+
+div#business {
+  background-color: #f8edeb;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+div#business p {
+  font-size: 25px;
+  color: white;
+  background-color: #e7290f;
+}
+
+div#business p span {
+  font-style: italic;
+}
+
+div#business dl {
+  text-align:center;
+}
+
+div#business dl dt {
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 3px  solid #e7290f;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+div#business dl dd {
+  color: black;
+  font-size: 20px;
+}
+
+div#business h4 {
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #e7290f;
+  text-align: center;
+  font-size: 80px;
+  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  width: 1060px;
+  padding: 30px 0;
+}
+
+p#design_the_future {
+  width: 1060px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+div#cource2 {
+  width: 1060px;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+div#cource2 div {
+  width: 1060px;
+  height: auto;
+  background-color: #fff;
+  border: 1px dotted gray;
+  margin-bottom: 100px;
+}
+
+div#cource2 div h5 {
+  color: #e7290f;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+div#cource2 div p {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+/* ========================================
+    アニメ・マンガ学部の学部紹介
+=========================================*/
+
+div#anime {
+  background-color: #f2e6f3;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+div#anime p {
+  font-size: 25px;
+  color: white;
+  background-color: #dd0079;
+}
+
+div#anime dl {
+  text-align:center;
+}
+
+div#anime dl dt {
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 3px  solid #dd0079;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+div#anime dl dd {
+  color: black;
+  font-size: 20px;
+}
+
+div#anime h4 {
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #dd0079;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  width: 1060px;
+  padding: 30px 0;
+}
+
+div#anime p#design_the_future {
+  width: 1060px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+div#cource3 {
+  width: 1060px;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+div#cource3 div {
+  width: 1060px;
+  height: auto;
+  background-color: #fff;
+  border: 1px dotted gray;
+  margin-bottom: 100px;
+}
+
+div#cource3 div h5 {
+  color: #dd0079;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+div#cource3 div p {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+/* ========================================
+    フッタ用CSS
+=========================================*/
+footer {
+  height: auto;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer nav ul {
+  background-color: #ED2805;
+  text-align: center;
+  
+  padding: 10px 0 10px 0;
+}
+
+footer nav ul li {
+  list-style-type: none;
+  color: white;
+  border-left: 1px solid white;
+  width: 250px;
+  padding: 0 ;
+  display: inline-block;
+  height: auto;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  font-family: 'RocknRoll One', sans-serif;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #ED2805;
+  background-color: white;
+  transition: 0.3s;
+}
+
+footer nav ul li:last-child {
+  border-right: 1px solid white;
+}
+
+div.official-sns div {
+  float: left;
+  margin-left: 50px;
+  color: white;
+  text-align: center;
+
+}
+
+div.official-sns div a {
+  text-decoration: none;
+  color: white;
+}
+div#twitter {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(29, 161, 242);
+  border-radius: 15px;
+
+}
+
+div#facebook {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(59, 89, 152);
+  border-radius: 15px;
+
+
+}
+
+address {
+  font-style: italic;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+small {
+  color: black;
+}
